@@ -58,4 +58,24 @@ const bgType = {
   fairy: "bg-pink-500",
 };
 
-export { gradientsByType, borderByType, bgType };
+const textColor = {
+  grass: "text-green-500",
+  fire: "text-red-500",
+  water: "text-blue-500",
+  bug: "text-amber-500",
+  normal: "text-amber-500",
+  poison: "text-purple-500",
+  electric: "text-yellow-500",
+  ground: "text-amber-500",
+  fairy: "text-pink-500",
+  fighting: "text-indigo-500",
+  rock: "text-stone-500",
+  ghost: "text-violet-500",
+  steel: "text-zinc-500",
+  dark: "text-gray-500",
+  psychic: "text-yellow-500",
+  ice: "text-sky-500",
+  dragon: "text-teal-500",
+}
+
+export { gradientsByType, borderByType, bgType, textColor };

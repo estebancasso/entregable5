@@ -6,7 +6,6 @@ import { bgType, gradientsByType } from "../constans/pokemon";
 
 const PokemonDetail = () => {
   const [pokemonInfo, setPokemonInfo] = useState(null);
-  console.log(pokemonInfo);
   const { id } = useParams();
 
   const getPercentBarProgress = (stat_value) => {
@@ -37,11 +36,11 @@ const PokemonDetail = () => {
             />
           </header>
           <div className="relative grid gap-4">
-            <span className="border bg-white w-10 mx-auto text-[#416460] font-semibold sm:w-24">
+            <span className="border bg-white w-16 mx-auto text-[#416460] font-semibold sm:w-24">
               # {pokemonInfo?.id}
             </span>
             <hr className="mb-4" />
-            <h3 className="text-xl capitalize font-bold text-[#416460] absolute left-1/2 -translate-x-1/2 top-[45%] -bottom-3 bg-white w-32 h-8 sm:text-ellipsis sm:overflow-hidden">
+            <h3 className="text-xl capitalize font-bold text-[#416460] absolute left-1/2 -translate-x-1/2 top-[45%] -bottom-3 bg-white w-32 h-8 text-ellipsis overflow-hidden">
               {pokemonInfo?.name}
             </h3>
           </div>
@@ -64,7 +63,7 @@ const PokemonDetail = () => {
               <h5 className="mb-4 text-xl font-medium">Type</h5>
               <div className="grid grid-cols-2 gap-3">
                 {
-                  pokemonInfo?.types.map((type) => <span className={`${bgType[type.type.name]} p-1 text-white capitalize text-lg font-semibold rounded-sm`} key={type.type.name}>
+                  pokemonInfo?.types.map((type) => <span className={`${bgType[type.type.name]} p-1 text-white capitalize font-semibold rounded-sm`} key={type.type.name}>
                     {type.type.name}
                   </span>)
                 }
@@ -73,8 +72,8 @@ const PokemonDetail = () => {
             <div>
               <h5 className="mb-4 text-xl font-medium">Abilities</h5>
               <div className="grid grid-cols-2 gap-3">
-                <span className="bg-white border p-1 capitalize text-lg font-semibold rounded-sm sm:text-ellipsis sm:overflow-hidden">{pokemonInfo?.abilities[0].ability.name}</span>
-                <span className="bg-white border p-1 capitalize text-lg font-semibold rounded-sm sm:text-ellipsis sm:overflow-hidden">{pokemonInfo?.abilities[0].ability.name}</span>
+                <span className="bg-white border p-1 capitalize font-semibold rounded-sm text-ellipsis overflow-hidden">{pokemonInfo?.abilities[0].ability.name}</span>
+                <span className="bg-white border p-1 capitalize font-semibold rounded-sm text-ellipsis overflow-hidden">{pokemonInfo?.abilities[0].ability.name}</span>
               </div>
             </div>
           </div>

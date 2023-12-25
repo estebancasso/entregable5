@@ -14,13 +14,13 @@ const Home = () => {
   };
 
   return (
-    <section className="grid grid-rows-[1fr,_auto] h-screen overflow-hidden">
+    <section className="grid grid-rows-[1fr,_auto] h-screen overflow-hidden font-lato">
       <div className="text-center justify-self-center self-center">
         <main className="p-6">
           <header className="pb-6">
             <img src="/images/pokedex.png" alt="" />
           </header>
-          <h3 className="text-red-500 text-2xl font-bold sm:text-3xl">Hello trainer!</h3>
+          <h3 className="text-red-500 text-2xl font-extrabold sm:text-3xl">Hello trainer!</h3>
           <p className="pb-6 text-sm font-semibold sm:text-lg">
             Write your name to start
           </p>

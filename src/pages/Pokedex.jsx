@@ -54,17 +54,17 @@ const Pokedex = () => {
   return (
     <section>
       <Header />
-      <main>
+      <main className="font-lato">
         <div className="p-4 max-w-[1200px] mx-auto py-6">
-          <p className="px-10 mb-4">
+          <p className="px-6 mb-4">
             <b className="capitalize text-red-500">Welcome {trainerName}</b>,
             herecan you find favorite Pokemon
           </p>
           <form
-            className="grid gap-6 px-10 sm:flex sm:justify-between"
+            className="grid gap-6 px-6 sm:flex sm:justify-between"
             onSubmit={handleSubmit}
           >
-            <div className="sm:grid sm:grid-cols-[300px,_100px]">
+            <div className="sm:grid sm:grid-cols-[250px,_100px]">
               <input
                 className="bg-white shadow p-2  shadow-slate-400 outline-none rounded-[3px]"
                 name="pokemonName"
